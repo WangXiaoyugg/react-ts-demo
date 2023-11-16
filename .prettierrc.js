@@ -5,8 +5,7 @@ module.exports = {
     bracketSpacing: true,
     // 行结束符使用 Unix格式
     endOfLine: 'lf',
-    // true, Put > on the last line instead of at the new line
-    jsxBracketSameLine: false,
+  
     // 行宽
     printWidth: 100,
     // 换行方式
