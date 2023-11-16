@@ -4,7 +4,7 @@ module.exports = {
     // 括号内不出现空格
     bracketSpacing: true,
     // 行结束符使用 Unix格式
-    endOfLine: 'lf',
+    endOfLine: 'crlf',
   
     // 行宽
     printWidth: 100,
