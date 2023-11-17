@@ -9,13 +9,15 @@ import React from 'react'
 // import { useMouse } from './hooks/useMouse'
 // import { useGetInfo } from './hooks/useGetInfo'
 // import { useTitle, useMouse } from 'ahooks'
-import { ClosureTrapDemo } from './ClosureTrap'
+// import { ClosureTrapDemo } from './ClosureTrap'
+import { StyledCmpDemo } from './styledCmpDemo'
 function App() {
   // useTitle('Hello')
   // const mouse = useMouse()
 
   return (
     <div className="App">
+      <StyledCmpDemo />
       {/* <div>
         page: {mouse.clientX}, {mouse.clientY}
       </div> */}
@@ -25,7 +27,7 @@ function App() {
       {/* <RefDemo /> */}
       {/* <MemoDemo /> */}
       {/* <CallbackDemo /> */}
-      <ClosureTrapDemo />
+      {/* <ClosureTrapDemo /> */}
     </div>
   )
 }

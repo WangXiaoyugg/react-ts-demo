@@ -1,0 +1,13 @@
+.list-item {
+    list-style: none;
+    border: 1px solid gray;
+    margin: 16px;
+    padding: 10px;
+    .published-span {
+        color: green;
+    }
+}
+
+.published-item {
+    border: 2px solid green;
+}

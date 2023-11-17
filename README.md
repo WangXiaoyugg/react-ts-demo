@@ -103,3 +103,11 @@ React18开始，开发环境会执行两次useEffect, 模拟组件创建、更�
 ### 闭包陷阱
 当异步函数取state 时，可能不是最新的state;
 可以用useRef来解决。
+
+## React CSS 方案
+1. 普通方式 ，内联style + 引入 css 文件
+   1. classnames
+   2. clsx
+2. css Module 和 Sass
+   1. 解决类名重复的问题
+3. css inh js, styled-component, style-jsx, Emotion
