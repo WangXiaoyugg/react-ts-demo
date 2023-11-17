@@ -56,3 +56,50 @@
 1. 判断， Vue 模板使用 v-if，v-else,  React JSX 使用条件表达式
 2. 循环， Vue 模板使用 v-for, React JSX 使用 map。
 3. React能用JS就用JS, Vue 自定义很多指令
+
+
+## React Hooks
+1. React 内置Hooks
+2. 自定义 Hooks
+3. 使用第三方Hooks
+
+
+### useState
+1. state 是 内部的状态，state的更新会触发组件的更新
+2. state 的更新是异步更新
+3. 如果变量不在JSX中使用，用useRef 代替 useState
+4. 可能会被合并, 使用函数不会被合并
+5. 不可变数据，不去修改state的值，而是去传入一个新值
+
+### immer
+不可变数据
+
+
+### useEffect
+声明周期：创建，更新，销毁
+React18开始，开发环境会执行两次useEffect, 模拟组件创建、更新、销毁的完整流程
+生产环境会执行一次useEffect
+
+### useRef
+一般用于操作DOM
+也可传入普通JS 变量，不会触发 rerender
+
+### useMemo
+可以缓存数据，不用每次执行函数都重新执行
+可用于计算量较大的场景，缓存提高性能
+
+### useCallback
+缓存事件的回调函数
+
+### 抽离公共部分 复用代码
+1. 自定义hooks
+2. 第三方hooks, react-use, a-hooks
+
+### Hooks 的使用规则
+1. 必须使用 useXXX 格式命名
+2. 只能在两个地方调用hook, 组件内，其他的Hook
+3. 必须保证每次的调用顺序一致，不能放在 if for 内部
+
+### 闭包陷阱
+当异步函数取state 时，可能不是最新的state;
+可以用useRef来解决。
